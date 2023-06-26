@@ -1,12 +1,10 @@
-//import NextButton from 'next/link'
-//import { Link } from '@chakra-ui/react'
 import { Box, Flex, Spacer, Heading, Button } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 //import { useScrollY } from "react-use-scroll-position";
 import React from 'react'
 import { useEffect, useState } from "react";
-import { SearchBar } from "./SearchBar";
-//import Link from "next/link";
+//import { SearchBar } from "./SearchBar";
+import NextLink from "next/link";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,11 +71,12 @@ function Navbar() {
           Pricing
         </Button>
         <Spacer />
-       <SearchBar />
       </Box>
       <Spacer />
       <Box textAlign="right">
-        <Button>Signup</Button>
+        <Button as={NextLink} href='https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4'>
+          Learn
+        </Button>
       </Box>
     </Flex>
   );
