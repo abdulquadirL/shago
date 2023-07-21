@@ -1,42 +1,45 @@
 import React from 'react'
-import { Box, Flex, Spacer, Stack } from '@chakra-ui/react'
+import { Box, Flex, Spacer, HStack, VStack, Text } from '@chakra-ui/react'
 
 export const Footer = () => {
   return (
     <Box
      height="400px"
-     width="100%"
-     mt="40px"
-     bg="blue.800">
-    <Flex>
-        <Stack direction="row">
+     p='15px 15px'
+     pt="40px"
+     bg="blue.900">
+    <Flex> 
     <Box
-     bg="gray.100"
+     bg=""
      height="200px"
-     width="300px" 
+     width= "33%"
+     mr='5px'
     >
+      <VStack>
+       <Text> About Us</Text>
+      </VStack>
     </Box>
     <Spacer/>
     <Box
-     bg="gray.100"
+     bg=""
      height="200px"
-     width="300px" 
+     mr='5px'
+     width= "33%"
     >
+      <VStack>
+       <Text> About Us</Text>
+      </VStack>
     </Box>
     <Spacer/>
     <Box
-     bg="gray.100"
+     bg=""
      height="200px"
-     width="300px" 
+     width= "33%"
     >
-    </Box>
-    <Box
-     bg="gray.100"
-     height="200px"
-     width="300px" 
-    >
-    </Box>
-        </Stack>
+      <VStack>
+       <Text> About Us</Text>
+      </VStack>
+    </Box>  
     </Flex>
     </Box>
   )
