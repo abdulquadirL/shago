@@ -20,7 +20,7 @@ const FeatureSections = ({ buttonText, sectionText  }) => {
       >
       <Center>
       <Button
-        
+        width="100%"
         size = {["sm", "sm", "lg"]}
         onMouseEnter={handleButtonHover}
         onMouseLeave={handleButtonHover}
@@ -29,7 +29,7 @@ const FeatureSections = ({ buttonText, sectionText  }) => {
         {buttonText}
       </Button>
       </Center>
-      {isTextVisible && <Text >{sectionText}</Text>}
+      {isTextVisible && <Text fontSize={["12px", "16px", "22px"]} >{sectionText}</Text>}
       
     </Box>
     <Box width="41%">
