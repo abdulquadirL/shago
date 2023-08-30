@@ -3,7 +3,8 @@ import { Box, Text } from '@chakra-ui/react';
 
 export const Mathric = () => {
 
-  const [state, setState] = React.useState({
+  const [state, setState] = React.useState
+  ({
     num1: 3,
     num2: 2,
     response: "",
@@ -11,7 +12,8 @@ export const Mathric = () => {
     incorrect: false
   });
 
-  function inputKeyPress(event) {
+  function inputKeyPress(event) 
+  {
     if (event.key === 'Enter') {
       const answer = parseInt(state.response);
       if (state.num1 + state.num2 === answer) {

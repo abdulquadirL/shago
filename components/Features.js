@@ -1,41 +1,63 @@
-import { Box, Flex, HStack, Button, Text, Spacer, Stack, VStack } from '@chakra-ui/react'
-import React from 'react'
-//import Image  from 'next/image'
+import React from 'react';
 import { useState } from 'react';
+import { Button, Box, Text, Spacer } from "@chakra-ui/react"
+//import { Button, Text } from 'react-scroll';
 
-export const Features = () => {
+const Features = () => {
+
+ const features = [
+    {id: "1", btext1: "Create", title: "Hello! Create", intro: "creation"
+    }, {id: "2", btext2: "Edit", title: "Hello! Edit", intro: "editing"}, {id: "3", btext3: "Delete", title: "Hello Delete", intro: "deleting"}
+  ]
+
   const [isTextVisible, setIsTextVisible] = useState(false);
-
-  const handleButtonHover = () => {setIsTextVisible(!isTextVisible)};
+  const [isImageVisible, setIsImageVisible] = useState(false)
+  const [boxVisible, setBoxVisible] = useState(false)
+  const handleButtonHover = () => {
+    setIsTextVisible(!isTextVisible)
+    setBoxVisible(!boxVisible)
+    setIsImageVisible(!isImageVisible)
+  };
+  
   return (
-    <Box
-      width="100%"
-      bg="white"
-      px='3%'
-      py="3%"
-    >
+    <Box m={4} p={4} display="flex" flexDirection="row">
+      <Box>
+        <Button bg='green'
+                key={features.id}
+                onClick={handleButtonHover}
+                onMouseEnter={handleButtonHover}
+                onMouseLeave={handleButtonHover}
+        >
+        {features[0].btext1}
+        </Button>
+        <Button bg="gold" 
+                key={features.id}
+                onClick={handleButtonHover}
+                onMouseEnter={handleButtonHover}
+                onMouseLeave={handleButtonHover}
+        >
+        {features[1].btext2}
+        </Button>
+        <Button bg='tomato' 
+                key={features.id}
+                onClick={handleButtonHover}
+                onMouseEnter={handleButtonHover}
+                onMouseLeave={handleButtonHover}
+        >
+        {features[2].btext3}
+        </Button>
+      </Box>
+      <Spacer/>
+      <Box> 
+        {isTextVisible && <Text key={features.id}>{features[1].title}</Text>}
       
-        <VStack>
-        <Box bg="blue.600" height="200px" color="blue" p="10px 10px" width="100%" textAlign="center"
-        >
-          <Button id='btn' bg="wheat" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>Invoicing</Button>
-          {isTextVisible && <Text>You can be able to make sales and generate invoice which you can decide to print or share with your customer</Text>}
-        </Box>
-        <Spacer />
-        <Box bg="blue.600" height="200px" color="blue" p="10px 10px" width="100%" textAlign="center"
-        >
-          <Button id='btn-b' bg="wheat" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>Invoicing</Button>
-          {isTextVisible && <Text> This a demo box</Text>}
-      </Box>
-      <Spacer />
-      <Box bg="blue.600" height="200px" color="blue" p="10px 10px" width="100%" textAlign="center"
-      >
-        <Button id='btn-c' bg="wheat" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>Invoicing</Button>
-        {isTextVisible && <Text>This a demo box</Text>}
-      </Box>
-      </VStack>
+       </Box>
+      
         
-    </Box> 
+    </Box>
+    
     
   )
 }
+
+export default Features

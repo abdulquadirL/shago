@@ -1,66 +1,72 @@
 
 import React from 'react'
-import { Box, Heading, Text, Stack, Button, Image, Spacer} from '@chakra-ui/react'
-import { Features } from '../components/Features'
-//import { Plans } from '../components/Plans'
-//src='https://photos.app.goo.gl/UDRrLMaPEog44gn97'
+import { Box, Heading, Text, Stack, Button, Image, AspectRatio, Center} from '@chakra-ui/react'
 
 export function Header() {
   return (
-    <Box>
+    <Box width="100%" >
       <Box
-      bgColor={'blue.600'}
       pl="30px"
-      pt="30px"
-      color="white"
+      pt="30px" 
       > 
       <Stack direction="row">
+        <Box
+        width="50%"
+        as='section'
+          
+        >
            <Stack direction="column">
             <Heading 
-            maxWidth="750px" 
+            maxWidth="100%"
             fontWeight='bold' 
-            fontSize={["xl", "2xl", "60px"]} 
+            fontSize={["xl", "2xl", "70px"]} 
             fontStyle='Inter' 
             textAlign="left"
-            pt="40px"
-            pl="20px"
+            pt="30px"
+            pl="10px"
             >
               Manage and grow your business the smart way
             </Heading> 
-            <Text 
+            <Text
+            width="100%" 
             fontWeight='medium' 
-            fontSize={["2xl", "xl", "xl"]} 
-            mt='10px'
-            mb="30px"
-            pl="20px" 
-            maxWidth="750px" 
+            fontSize={["12px", "14px", "2xl"]} 
+            mt='15px'
+            mb="20px"
+            pl="10px" 
+            color="blue.600"
             textAlign="left">
               It is hightime you reduced avoidable losses and maximize your income without hassle.
             </Text> 
             </Stack>
-            <Spacer />
-             <Image
-           boxSize={["200px", "320px", "800px"]}
-           object-fit='cover'
-           src="./shago.png"
-           alt='Shago'
+            </Box>
+           
+            <Box width="50%">
+              <Center>
+             <Image width={["100px", "250px", "400px"]} height={["120px", "200px", "700px"]}  objectFit='cover' src="./shago.png" alt='Shago'
              />
+             </Center>
+             </Box>
+            
+             
       </Stack>
-            <Stack direction ='column'>
+             
+        </Box>
+        <Center>
               <Button 
               variant="solid"
-              bg="blue.200" 
+              bg="blue.300"
+              borderRadius="20px" 
+              ml="10px"
               mr="2px" 
-              mt='20px' 
+              mt='10px' 
               mb="30px"
-              size='lg'
-              maxWidth="150px"
+              size={['sm', 'sm', 'lg']}
               > 
-              Get started
+              Get started for free
               </Button>
-            </Stack>     
-        </Box>
-        <Features /> 
+            </Center>   
+    
         </Box>
   )
 } 

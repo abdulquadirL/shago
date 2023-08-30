@@ -1,79 +1,100 @@
 import React from 'react'
-import { Box, Button, Flex, Text, HStack, Spacer } from '@chakra-ui/react'
+import { Box, Button, Flex, Text, HStack, Spacer, Link } from '@chakra-ui/react'
+import FixedButton from "../components/FixedButton";
 
 export const Pricing = () => {
   return (
     <Box
      width="100%"
-     height='360px'  
-     bg='blue.600' 
-     mt='20px' 
-     px={["10px", "15px", '25px']} 
-     py="15px"
-      
+     height=''  
+     bg='' 
+     mt='20px'
+     px="15px"  
+     py="5px" 
     >
       
       <Text
-       as="H1"
-       fontFamily='sans-serif' 
-       fontSize={["10px", "15px", '25px']}  
-       color='white' 
-       fontWeight='semibold'
-       mb="20px"
-      > Pricing</Text>
-       <HStack>
+       
+       fontSize='20px' 
+       width="100%" 
+       color='blue.600' 
+       fontWeight='bold'
+       mb="10px"
+      > Pricing
+      </Text>
+
+       <Flex direction={["column", "row", "row"]}>
       <Box as="section"
-      bg="whiteAlpha.300"
-           mr='20px'
-           width= {["120px", "200px", "300px"]}
-           height="300px"
-           px='20px'
+           bg="blue.500"
+           width="33%"
+           maxHeight="400px"
+           px="10px "
            py="20px"
-           
+           textAlign="center"
       >
+        <Text fontFamily="serif" color='white' fontWeight="bold" fontSize={["16px", "22px", "30px"]}>Basic</Text>
+        <Text fontFamily="serif" fontSize={["14px", "20px", "28px"]} fontWeight="bold">NGN2500</Text><p>/Month</p>
+        <Text fontFamily="inherit" color='white' fontWeight="semibold" fontSize={["12px", "18px", "22px"]}>1 Shop <br/> 3 Staffs <br/> Invoicing</Text>
       <Button
-          bg="orange.300"
+          bg="blue.300"
           width="100%"   
-          mb='10px'  
-          fontSize={["xl", "xl", "22px"]} 
+          mb='15px' 
+          size={["sm", "sm", "lg"]} 
          >
-        Basic 
+        <Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link>
       </Button>
-      <Text color='white'>NGN2500/Monthly</Text> 
+
       </Box> 
       <Spacer/>
       <Box as="section"
-           bg="whiteAlpha.300"
-           mr={["10px", "15px", "20px"]}
-           width={["120px", "200px", "300px"]}
-           height="300px"
-           px={["10px", "15px", "20px"]}
-           py={["10px", "15px", "20px"]}
-           alignItems="center">
-           
+           bg="blue.500"
+           width="33%"
+           maxHeight="400px"
+           px="10px "
+           py="20px"
+           alignItems="center"
+           textAlign="center"
+           >
+           <Text color='white' fontFamily="serif" fontWeight="bold" fontSize={["16px", "22px", "30px"]}>Ultimate</Text>
+           <Text fontFamily="serif" fontWeight="bold"  fontSize={["14px", "20px", "28px"]}>NGN5000</Text><p>/Month</p>
+           <Text fontFamily="inherit"color='white' fontWeight="semibold" fontSize={["12px", "18px", "22px"]}>10 Shops <br/> 30 Staffs <br/> Invoicing <br/> Staff Management <br/></Text>
       <Button 
-       bg="orange.300"
-       width="100%" 
-       mb="10px"  
-       fontSize={["xl", "xl", "22px"]}
+       bg="blue.300"
+       width="100%"
+       mt="20px" 
+       mb="15px" 
+       size={["sm", "sm", "lg"]}
+       
        >
-        Ultimate  
+        Get Started  
       </Button>
-       <Text color='white'>NGN5000/Monthly</Text>
+     <FixedButton/>  
     </Box>
     <Spacer/>
-    <Box as='section' bg="whiteAlpha.300" mr='20px' width={["120px", "200px", "300px"]} height="300px" px="20px"
-           py="20px">  
+    <Box as='section'
+         bg="blue.500"  
+         width="33%" 
+         maxHeight="400px"
+         px="10px "
+         py="20px"
+         textAlign="center"
+         >  
+         <Text fontFamily="serif" color='white' fontWeight="bold" fontSize={["16px", "22px", "30px"]}>Premium</Text>
+         <Text fontFamily="calibri" fontWeight="bold" fontStyle=""  fontSize={["16px", "20px", "28px"]}>Contact Sales</Text>
       <Button
-       bg="orange.300"
+       bg="blue.300"
        width="100%"   
-       mb='10px'  
-       fontSize={["xl", "xl", "22px"]} 
+       position=""
+       bottom={4}  
+       size={["sm", "sm", "lg"]}
+
+        
        >
-        Premium  
+        Get Started  
       </Button>
       </Box>
-       </HStack> 
+       </Flex>
+       
     </Box>
   )
 }

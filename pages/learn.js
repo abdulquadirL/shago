@@ -4,7 +4,7 @@ import React, { useState } from 'react';
         <h1>Develop. Preview. Ship. 🚀</h1>
       }
 
-      export default function HomePage() {
+      export default function Learn() {
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
         const [likes, setLikes] = useState(0);
