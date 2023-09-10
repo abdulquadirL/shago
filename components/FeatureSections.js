@@ -14,11 +14,11 @@ import { Box, Button, Text, Image, Center} from '@chakra-ui/react';
   };
   return(
     
-    <Box bg="" display="flex" flexDirection={["column", "row", "row"]} width="100%">
+    <Box bg="blue.600" display="flex" flexDirection={["column", "row", "row"]} width="100%">
      
     <Box width="58%" 
          textAlign="left"
-         color=""
+         color="white"
          border="5px solid blue.300"
          p="10px 10px"
     >  

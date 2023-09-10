@@ -1,10 +1,11 @@
 
 import React from 'react'
-import { Box, Heading, Text, Stack, Button, Image, AspectRatio, Center} from '@chakra-ui/react'
+import { Box, Heading, Text, Stack, Button, Image, Center} from '@chakra-ui/react'
+import { circOut } from 'framer-motion'
 
 export function Header() {
   return (
-    <Box width="100%" >
+    <Box width="100%" bgGradient="radial(teal.300, blue.700, gray.300)"  >
       <Box
       pl="30px"
       pt="30px" 
@@ -34,14 +35,15 @@ export function Header() {
             mt='15px'
             mb="20px"
             pl="10px" 
-            color="blue.600"
+            color="blue.50"
             textAlign="left">
               It is hightime you reduced avoidable losses and maximize your income without hassle.
             </Text> 
             </Stack>
             </Box>
            
-            <Box width="50%">
+            <Box width="50%"
+            >
               <Center>
              <Image width={["100px", "250px", "400px"]} height={["120px", "200px", "700px"]}  objectFit='cover' src="./shago.png" alt='Shago'
              />
@@ -54,14 +56,16 @@ export function Header() {
         </Box>
         <Center>
               <Button 
+              bgGradient="linear(to-r, teal.500, blue.100)"
+              _hover={{bgGradient: 'linear(to-l, orange.300, yellow.500),'}}
               variant="solid"
-              bg="blue.300"
               borderRadius="20px" 
               ml="10px"
               mr="2px" 
               mt='10px' 
               mb="30px"
               size={['sm', 'sm', 'lg']}
+              
               > 
               Get started for free
               </Button>

@@ -1,12 +1,13 @@
 //import { useState } from "react";
-import { ChakraProvider, CSSReset } from "@chakra-ui/react"; 
+import { Box } from "@chakra-ui/react"
+import { ChakraProvider, CSSReset} from "@chakra-ui/react"; 
 import {Header} from '../components/Header'
 import { Pricing } from '@/components/Pricing'
 import Navbar from '../components/Navbar'
 import { Footer } from "@/components/Footer";
 import FeatureSections from "@/components/FeatureSections";
 import TestFeatures from "@/components/TestFeatures";
-import { Mathric } from "@/components/Mathric";
+//import { Mathric } from "@/components/Mathric";
 
 
 
@@ -41,14 +42,16 @@ const feature = [{
       <CSSReset />
       <Component{...pageProps} />
       <Navbar />
+      <Box bg="blue.500">
       <Header />
       <FeatureSections buttonText = {feature[1].title}
                        sectionText= {feature[1].description}             
       />
       <TestFeatures/>
       <Pricing />
+      </Box>
       <Footer />
-      <Mathric/>
+      
     </ChakraProvider>
      
    

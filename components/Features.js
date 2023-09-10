@@ -20,7 +20,7 @@ const Features = () => {
   };
   
   return (
-    <Box m={4} p={4} display="flex" flexDirection="row">
+    <Box m={4} p={4} display="flex" flexDirection="row" >
       <Box>
         <Button bg='green'
                 key={features.id}

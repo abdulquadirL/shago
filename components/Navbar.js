@@ -1,13 +1,14 @@
-import { Box, Flex, Spacer, Heading, Button, Link } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Heading, useColorMode, Link } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import React from 'react'
 import { useEffect, useState } from "react";
 //import Link from 'next/link'
 import NextLink from "next/link";
+//import NavButton from "./NavButton";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  //const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
   const [ show, setShow ] = useState(false)
   const handleToggle = () => {
     setShow(!show);
@@ -44,12 +45,15 @@ function Navbar() {
       justify='space-between'
       wrap='wrap'
       padding='1rem'
-      bg={isScrolled ? "gray.600" : "transparent"}
-    color={colorMode === "light" ? "gray.900" : "gray.100"}
+      bg={isScrolled ? "gray.500" : "transparent"}
+      onClickl={toggleColorMode}
+      color={colorMode === "light" ? "Dark" : "teal"}
+      
+    
     >
     <Flex align="center"
           mr={5}>
-      <Heading as="h1" size="lg" letterSpacing={"-.1rem"} color="blue.300">
+      <Heading as="h1" size="lg" fontFamily="inter" fontWeight="extrabold" letterSpacing={"-0.3px"} color="blue.300">
           Shago
       </Heading>
       </Flex>
@@ -62,6 +66,8 @@ function Navbar() {
         width={{ sm: "full", md: "auto" }}
         alignItems="center"
         flexGrow={1} 
+        fontFamily="inter" fontWeight="semibold"
+       
       >
         <Link variant="solid" mr={2} >
            Home  
@@ -72,7 +78,7 @@ function Navbar() {
         <Link variant="solid" mr={2}>
           Contact
         </Link>
-        <Link variant="solid" mr={2}>
+        <Link variant="solid" mr={2} href='/pricing'>
           Pricing
         </Link>
 
@@ -82,6 +88,7 @@ function Navbar() {
         <Link as={NextLink} target="_blank" href='https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4'>
           Learn
         </Link>
+        
       </Box>
     </Flex>
     
