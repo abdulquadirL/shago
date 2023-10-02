@@ -1,0 +1,12 @@
+
+@media (max-width = 599px) {
+    body {
+        display: block;
+    }
+}
+
+@media (min_width = 600px) {
+    body {
+        display: none;
+    }
+}
