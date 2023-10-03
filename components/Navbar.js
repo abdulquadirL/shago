@@ -69,16 +69,16 @@ function Navbar() {
         fontFamily="inter" fontWeight="semibold"
        
       >
-        <Link variant="solid" mr={2} >
+        <Link variant="ghost" mr={2} >
            Home  
         </Link>
-        <Link variant="solid" mr={2} href="/about">
+        <Link variant="ghost" mr={2} href="/about">
            About
         </Link >
-        <Link variant="solid" mr={2}>
+        <Link variant="ghost" mr={2}>
           Contact
         </Link>
-        <Link variant="solid" mr={2} href='/pricing'>
+        <Link variant="ghost" mr={2} href='/pricing'>
           Pricing
         </Link>
 
