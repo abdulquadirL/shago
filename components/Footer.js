@@ -1,6 +1,7 @@
 import React from 'react'
-import { Box, Flex, Spacer, HStack, VStack, Text, Container, Grid } from '@chakra-ui/react'
-import { TwitterIcon } from "@chakra-ui/icons";
+import { Box, Flex, Spacer, HStack, VStack, Text, Container, Grid, SimpleGrid, Card, CardHeader, CardBody } from '@chakra-ui/react'
+import { IconButton } from "@chakra-ui/react";
+//import {FaTwitter, FaFacebook, FaInstagram} from "react-icons/fa"
 
 export const Footer = () => {
   return (
@@ -8,47 +9,53 @@ export const Footer = () => {
      height="400px"
      p='15px 15px'
      pt="40px"
-     bg="blue.800"
+     bg='teal'
      color="white">
-    <Grid dir='row' columnGap={3}> 
-    <Box
+    <SimpleGrid  spacing="35px" templateColumns='repeat(auto-fill, minmax(250px, 1fr))'> 
+      <Card direction={{base: "column", sm: "row" }} color="white" bgGradient="linear(to-r, teal.500, blue.100)">
+         <CardHeader>
+            <Text>About</Text>
+         </CardHeader>
+         <CardBody>
+            <Text></Text>
+         </CardBody>
+      </Card>
+      <Card>
+         <CardHeader>
+            <Text>About</Text>
+         </CardHeader>
+         <CardBody>
+            <Text></Text>
+         </CardBody>
+      </Card>
+      <Card>
+         <CardHeader>
+            <Text>About</Text>
+         </CardHeader>
+         <CardBody>
+            <Text></Text>
+         </CardBody>
+      </Card>
+      {/* <IconButton
+        as="a"
+        href="https://twitter.com/yourtwitter"
+        icon={<FaTwitter />}
+        aria-label="Twitter"
+      />
+      <IconButton
+        as="a"
+        href="https://facebook.com/yourfacebook"
+        icon={<FaFacebook />}
+        aria-label="Facebook"
+      />
+      <IconButton
+        as="a"
+        href="https://instagram.com/yourinstagram"
+        icon={<FaInstagram />}
+        aria-label="Instagram"
+      /> */}
+    </SimpleGrid>
     
-     bg=""
-     height="200px"
-     width= "33%"
-     mr='5px'
-    >
-      
-       <Text > About Us</Text>
-      
-    </Box>
-    
-    <Box
-     bg=""
-     height="200px"
-     mr='5px'
-     width= "33%"
-    >
-     
-       <Text > About Us</Text>
-      
-    </Box>
-    </Grid>
-    <Grid dir='row' columnGap={3}>
-    <Box
-     
-     height="200px"
-     width= "33%"
-    >
-      
-       <Text > Contact</Text>
-       
-        Twitter
-        Facebook
-        In
-        
-    </Box>  
-    </Grid>
     </Box>
   )
 }
