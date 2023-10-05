@@ -1,14 +1,14 @@
 import React from 'react'
-import { Flex, Text, Box, Container, Heading, Image, SimpleGrid, Card, CardHeader, CardFooter,CardBody, Stack } from '@chakra-ui/react'
+import { Flex, Text, Box, Heading, Image, SimpleGrid, Card, CardHeader, CardFooter,CardBody, Stack } from '@chakra-ui/react'
 //import { Container } from 'postcss'
 
 const TestFeatures = () => {
   return (
-    <Box bgGradient="linear(to-r, teal.500, blue.100)" p="3rem">
+    <Box  p="3rem" bg="teal">
         
-          <SimpleGrid spacing="35px">
-            <Card direction={{ base: 'column', sm: 'row' }}>
-              <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/>
+          <SimpleGrid spacing="15px" templateColumns='repeat(auto-fill, minmax(350px, 2fr))' >
+            <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="teal">
+              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
               <Stack>
                 <CardHeader>
                   <Heading size="md"> Unlimited Product Registration </Heading>
@@ -20,7 +20,7 @@ const TestFeatures = () => {
               </Stack>
             </Card>
 
-             <Card direction={{ base: 'column', sm: 'row' }}>
+             <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="teal">
               <Stack>
                 <CardHeader>
                   <Heading size="md">Invoice Sharing</Heading>
@@ -30,11 +30,11 @@ const TestFeatures = () => {
                 </CardBody>
                 <CardFooter></CardFooter>
               </Stack>
-              <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/>
+              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
             </Card>
 
-             <Card direction={{ base: 'column', sm: 'row' }}>
-             <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/>
+             <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="teal">
+             {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
              <Stack>
                 <CardHeader>
                   <Heading size="md"> Comprehensive stock tracker</Heading>
@@ -46,7 +46,7 @@ const TestFeatures = () => {
               </Stack>
             </Card>
 
-            <Card direction={{ base: 'column', sm: 'row' }}>
+            <Card direction={{ base: 'column', sm: 'column' }} color="white" bg="teal">
             <Stack>
                 <CardHeader>
                   <Heading size="md">Realtime Sales Report</Heading>
@@ -56,7 +56,7 @@ const TestFeatures = () => {
                 </CardBody>
                 <CardFooter></CardFooter>
               </Stack>
-              <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/>
+              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
             </Card>
           </SimpleGrid>
           

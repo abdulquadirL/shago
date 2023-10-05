@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer, Heading, useColorMode, Link } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Heading, useColorMode, Link, Button } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import React from 'react'
 import { useEffect, useState } from "react";
@@ -45,7 +45,7 @@ function Navbar() {
       justify='space-between'
       wrap='wrap'
       padding='1rem'
-      bg={isScrolled ? "gray.500" : "transparent"}
+      bg={isScrolled ? "teal" : "teal.400"}
       onClickl={toggleColorMode}
       color={colorMode === "light" ? "Dark" : "teal"}
       
@@ -69,23 +69,23 @@ function Navbar() {
         fontFamily="inter" fontWeight="semibold"
        
       >
-        <Link variant="ghost" mr={2} >
-           Home  
+        <Link color="white" variant="ghost" mr={2} >
+            Home 
         </Link>
-        <Link variant="ghost" mr={2} href="/about">
+        <Link color="white" variant="ghost" mr={2} href="/about">
            About
         </Link >
-        <Link variant="ghost" mr={2}>
+        <Link color="white" variant="ghost" mr={2}>
           Contact
         </Link>
-        <Link variant="ghost" mr={2} href='/pricing'>
+        <Link color="white" variant="ghost" mr={2} href='/pricing'>
           Pricing
         </Link>
 
       </Box>
       <Spacer />
       <Box textAlign="right">
-        <Link as={NextLink} target="_blank" href='https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4'>
+        <Link color="white" as={NextLink} target="_blank" href='https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4'>
           Learn
         </Link>
         

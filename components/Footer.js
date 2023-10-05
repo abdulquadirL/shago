@@ -7,12 +7,12 @@ export const Footer = () => {
   return (
     <Box
      height="400px"
-     p='15px 15px'
+     p='15px'
      pt="40px"
-     bg='teal'
+     bg="teal"
      color="white">
     <SimpleGrid  spacing="35px" templateColumns='repeat(auto-fill, minmax(250px, 1fr))'> 
-      <Card direction={{base: "column", sm: "row" }} color="white" bgGradient="linear(to-r, teal.500, blue.100)">
+      <Card direction={{base: "column", sm: "row" }} color="white" bg="teal">
          <CardHeader>
             <Text>About</Text>
          </CardHeader>
@@ -20,7 +20,7 @@ export const Footer = () => {
             <Text></Text>
          </CardBody>
       </Card>
-      <Card>
+      <Card bg="teal" color="white">
          <CardHeader>
             <Text>About</Text>
          </CardHeader>
@@ -28,7 +28,7 @@ export const Footer = () => {
             <Text></Text>
          </CardBody>
       </Card>
-      <Card>
+      <Card bg="teal" color="white">
          <CardHeader>
             <Text>About</Text>
          </CardHeader>

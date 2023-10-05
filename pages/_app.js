@@ -42,14 +42,9 @@ const feature = [{
       <CSSReset />
       <Component{...pageProps} />
       <Navbar />
-      <Box bg="blue.500">
       <Header />
-      <FeatureSections buttonText = {feature[1].title}
-                       sectionText= {feature[1].description}             
-      />
       <TestFeatures/>
       <Pricing />
-      </Box>
       <Footer />
       
     </ChakraProvider>

@@ -5,16 +5,13 @@ import FixedButton from "../components/FixedButton";
 export const Pricing = () => {
   return (
     <Box
-     
+     bg="teal.400"
      width="100%"
      height=''  
-     mt='20px'
-     px="15px"  
-     py="5px" 
+     px="25px"  
+     py="25px" 
     >
-      
       <Text
-       
        fontSize='20px' 
        width="100%" 
        color='white' 
@@ -57,7 +54,7 @@ export const Pricing = () => {
             <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
           </CardFooter>
         </Card>
-    
+  
        </SimpleGrid>
        
     </Box>

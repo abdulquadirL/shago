@@ -5,7 +5,7 @@ import { circOut } from 'framer-motion'
 
 export function Header() {
   return (
-    <Box width="100%" bgGradient="radial(teal.300, blue.700, gray.300)"  >
+    <Box width="100%" bgGradient="radial(blue.400, teal.500, gray.300)"  >
       <Box
       pl="30px"
       pt="30px" 
@@ -18,6 +18,7 @@ export function Header() {
         >
            <Stack direction="column">
             <Heading 
+            color="white"
             maxWidth="100%"
             fontWeight='bold' 
             fontSize={["xl", "2xl", "70px"]} 
@@ -56,7 +57,7 @@ export function Header() {
         </Box>
         <Center>
               <Button 
-              bgGradient="linear(to-r, teal.500, blue.100)"
+              bgGradient="linear(to-r, orange, green.500)"
               _hover={{bgGradient: 'linear(to-l, orange.300, yellow.500),'}}
               variant="solid"
               borderRadius="20px" 
