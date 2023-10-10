@@ -2,9 +2,8 @@ import { Box, Flex, Spacer, Heading, useColorMode, Link, Button } from "@chakra-
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import React from 'react'
 import { useEffect, useState } from "react";
-//import Link from 'next/link'
 import NextLink from "next/link";
-//import NavButton from "./NavButton";
+
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,7 +44,7 @@ function Navbar() {
       justify='space-between'
       wrap='wrap'
       padding='1rem'
-      bg={isScrolled ? "teal" : "teal.400"}
+      bg={isScrolled ? "teal" : "transparent"}
       onClickl={toggleColorMode}
       color={colorMode === "light" ? "Dark" : "teal"}
       

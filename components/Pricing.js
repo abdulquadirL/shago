@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Button, Flex, Heading, Text, HStack, Spacer, Card, CardBody, SimpleGrid, Link, CardHeader, CardFooter } from '@chakra-ui/react'
-import FixedButton from "../components/FixedButton";
+
 
 export const Pricing = () => {
   return (

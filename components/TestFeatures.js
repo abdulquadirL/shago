@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Text, Box, Heading, Image, SimpleGrid, Card, CardHeader, CardFooter,CardBody, Stack } from '@chakra-ui/react'
-//import { Container } from 'postcss'
+import { Text, Box, Heading, Image, SimpleGrid, Card, CardHeader, CardFooter,CardBody, Stack } from '@chakra-ui/react'
 
 const TestFeatures = () => {
   return (
