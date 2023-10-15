@@ -31,13 +31,13 @@ export const Plans = () => {
           <CardBody >
             <Heading size="lg">N0</Heading><Text pb={8}>/month</Text>
             <Text>100 Items <QuestionIcon/></Text>
-            <Progress value={30}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
             <Text>1 User License <QuestionIcon/></Text>
-            <Progress value={30}/>
-            <Text>1 Shop<QuestionIcon/></Text>
-            <Progress value={50}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
+            <Text>1 Shop <QuestionIcon/></Text>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
             <Text>1 Staff <QuestionIcon/></Text>
-            <Progress value={30}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
           </CardBody>
           <CardFooter>
             <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
@@ -51,13 +51,13 @@ export const Plans = () => {
           <CardBody>
             <Heading size="lg">N2,500</Heading><Text pb={8}>/month</Text>
             <Text>500 Items <QuestionIcon/></Text>
-            <Progress value={50}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
             <Text>1 User License <QuestionIcon/></Text>
-            <Progress value={50}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
             <Text>1 Shop <QuestionIcon/></Text>
-            <Progress value={50}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
             <Text>2 Staff <QuestionIcon/></Text>
-            <Progress value={50}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
           </CardBody>
           <CardFooter>
             <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
@@ -70,14 +70,14 @@ export const Plans = () => {
           </CardHeader>
           <CardBody>
             <Heading size="lg">N5,000</Heading><Text pb={8}>/month</Text>
-            <Text>2000 Items <QuestionIcon/></Text>
-            <Progress value={70}/>
+            <Text>3000 Items <QuestionIcon/></Text>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
             <Text>1 User License <QuestionIcon/></Text>
-            <Progress value={70}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
             <Text>3 Shops <QuestionIcon/></Text>
-            <Progress value={50}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
             <Text>10 Staff <QuestionIcon/></Text>
-            <Progress value={70}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
           </CardBody>
           <CardFooter>
             <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
@@ -91,7 +91,7 @@ export const Plans = () => {
           <CardBody>
             <Heading size="md" pb={6}>Get a Quote</Heading>
             <Text>Unlimited Items</Text>
-            <Progress value={100}/>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
           </CardBody>
           <CardFooter>
             <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
