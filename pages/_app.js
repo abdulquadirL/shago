@@ -1,7 +1,7 @@
 
 import { ChakraProvider, CSSReset} from "@chakra-ui/react"; 
 import {Header} from '../components/Header'
-import { Pricing } from '@/components/Pricing'
+import { Pricing } from '@/components/Plans'
 import Navbar from '../components/Navbar'
 import { Footer } from "@/components/Footer";
 import TestFeatures from "@/components/TestFeatures";
@@ -15,11 +15,6 @@ import TestFeatures from "@/components/TestFeatures";
     <ChakraProvider >
       <CSSReset />
       <Component{...pageProps} />
-      <Navbar />
-      <Header />
-      <TestFeatures/>
-      <Pricing />
-      <Footer />
     </ChakraProvider>  
   )
 }

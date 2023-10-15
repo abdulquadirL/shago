@@ -10,7 +10,9 @@ const TestFeatures = () => {
               {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
               <Stack>
                 <CardHeader>
+                  <Image src=""/>
                   <Heading size="md"> Unlimited Product Registration </Heading>
+                  
                 </CardHeader>
                 <CardBody>
                   <Text>With a single Application license, you will be able to register all available products in your store irrespective of the quantity</Text>
@@ -23,6 +25,7 @@ const TestFeatures = () => {
               <Stack>
                 <CardHeader>
                   <Heading size="md">Invoice Sharing</Heading>
+                  <Image />
                 </CardHeader>
                 <CardBody>
                   <Text>Your customers are tired of waiting unendlessly for their invoice! <br/> Share invoices via all file sharing applications supported by your device in with single click and/or over a mobile blutooth enabled printer that saves you the stress and precious time of manually writing invoices for customers</Text>

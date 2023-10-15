@@ -1,11 +1,10 @@
 
 import React from 'react'
 import { Box, Heading, Text, Stack, Button, Image, Center} from '@chakra-ui/react'
-import { circOut } from 'framer-motion'
 
 export function Header() {
   return (
-    <Box width="100%" bgGradient="radial(blue.400, teal.500, gray.300)"  >
+    <Box width="100%" bgGradient="radial(teal.400, teal.300, gray.500)"  >
       <Box
       pl="30px"
       pt="30px" 
@@ -50,8 +49,6 @@ export function Header() {
              />
              </Center>
              </Box>
-            
-             
       </Stack>
              
         </Box>

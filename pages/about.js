@@ -1,7 +1,17 @@
-export default function About() {
-    return (
-        <div>
-            <h1>Junior Web Developer</h1>
-        </div>
-    )
+
+import { Box } from "@chakra-ui/react";
+import AboutPage from "../components/AboutPage";
+
+function About() {
+  return (
+    <Box>
+      <AboutPage />
+    </Box>
+    
+  )
+  
+    
+   ;
 }
+
+export default About;

@@ -68,7 +68,7 @@ function Navbar() {
         fontFamily="inter" fontWeight="semibold"
        
       >
-        <Link color="white" variant="ghost" mr={2} >
+        <Link color="white" variant="ghost" mr={2} href="/">
             Home 
         </Link>
         <Link color="white" variant="ghost" mr={2} href="/about">
