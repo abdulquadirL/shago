@@ -7,8 +7,6 @@ import NextLink from "next/link";
 
 function Navbar() {
 
-
-
   const [isScrolled, setIsScrolled] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const [ show, setShow ] = useState(false)
