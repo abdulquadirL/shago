@@ -7,33 +7,32 @@ import { FaCopyright } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <Box
-     height="400px"
      p='15px'
      pt="40px"
-     bg="teal"
+     bg="gray.800"
      color="white">
     <SimpleGrid pl="3rem"  spacing="35px" templateColumns='repeat(auto-fill, minmax(250px, 1fr))'> 
-      <Card direction={{base: "column", sm: "row" }} color="white" bg="teal">
+      <Card direction={{base: "column", sm: "row" }} color="white" bg="transparent">
          <CardHeader>
-            <Text>About</Text>
-            <Link color="white"   href="/earn">Make money</Link >
+            {/* <Text>About</Text>
+            <Link color="white"   href="/earn">Make money</Link > */}
          </CardHeader>
          <CardBody>
             <Text></Text>
          </CardBody>
       </Card>
-      <Card bg="teal" color="white">
+      <Card bg="transparent" color="white">
          <CardHeader>
-            <Text>About</Text>
-            <Link color="white"   href="/help">Help center</Link >
+            {/* <Text>About</Text>
+            <Link color="white"   href="/help">Help center</Link > */}
          </CardHeader>
          <CardBody>
             <Text></Text>
          </CardBody>
       </Card>
-      <Card bg="teal" color="white">
+      <Card bg="transparent" color="white">
          <CardHeader>
-            <Text>About</Text>
+            {/* <Text>About</Text> */}
          </CardHeader>
          <CardBody>
             <Text></Text>
@@ -44,7 +43,7 @@ export const Footer = () => {
     <Box pl="3rem" align="right">
     <Card width="300px" mt="4rem" mb="1rem" bg="transparent">
          <CardBody>
-            <Text textAlign="left">Follow us on</Text>
+            <Text pl="2.2rem" color="white" textAlign="left">Follow us on</Text>
          </CardBody>
          <CardFooter justifyContent="space-evenly">
          <IconButton
@@ -71,7 +70,7 @@ export const Footer = () => {
     <Center>
     <HStack>
       <FaCopyright/>
-      <Text fontFamily="roboto"> 2023 Shago Inc. All rights reserved</Text>
+      <Text  fontFamily="roboto"> 2023 Shago Inc. All rights reserved</Text>
     </HStack>
     </Center>
     </Box>

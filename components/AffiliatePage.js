@@ -1,11 +1,22 @@
-import {Box, Form, FormLabel, Heading} from '@chakra-ui/react'
+import {Box, Center, Stack, Text, Form, FormControl, FormLabel, Heading} from '@chakra-ui/react'
 import Layout from './Layout'
 
 export default function AffiliatePage(){
     return(
         <Layout>
             <Box>
-                <Heading>Refer a Shop/Bussines owner and Earn </Heading>
+            <Center>
+                    <Stack>
+                        <Heading>Tell a Shop/Bussines Owner about Shago and Earn Big</Heading>
+                        <Text size="lg"> Would you like to get yourself an extra income? If yes fill the form below</Text>
+                    </Stack>
+                    <form>
+                        <FormControl>
+                            
+                        </FormControl>
+                    </form>
+                </Center>
+                
             </Box>
 
         </Layout>

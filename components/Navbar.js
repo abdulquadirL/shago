@@ -6,6 +6,9 @@ import NextLink from "next/link";
 
 
 function Navbar() {
+
+
+
   const [isScrolled, setIsScrolled] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const [ show, setShow ] = useState(false)
@@ -71,9 +74,9 @@ function Navbar() {
         justifyContent="space-between"
       >
         <Link color="white"   href="/">  Home </Link>
-        <Link color="white"   href="/about">About</Link >
-        <Link color="white"   href='/pricing'>Pricing</Link>
-        <Link color="white"   href='/help'>Help</Link>
+        <Link color="white" href="#features" >Features</Link>
+        <Link color="white"   href='#plans'>Pricing</Link>
+        {/* <Link color="white"  href='#help'>Help</Link> */}
       </Box>
       
       <Box textAlign="right">

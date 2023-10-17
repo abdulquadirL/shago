@@ -7,11 +7,8 @@ const PricingPage = () => {
 
   
   return (
-    <Layout>
-      <Box p={4}>
-       <Plans/>
-       <Box>
-         <Center >
+       <Box >
+         <Center p="2rem" bg="teal" >
            <Heading size="xl" py={10}>Compare Plans</Heading>
           </Center>
             
@@ -19,9 +16,9 @@ const PricingPage = () => {
                 minChildWidth='200px' 
                 spacing="30px" 
                 templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
-              
+                bg="teal"
               >
-                <Box pr="3rem">
+                <Box pl="1.5rem">
                   <Heading   size="lg" fontFamily="inter" fontWeight="extrabold" letterSpacing={"-0.3px"} color="blue.300">
                     Shago
                   </Heading>
@@ -44,8 +41,8 @@ const PricingPage = () => {
                   <Text color="gray.300">Contact Us</Text>
                 </Box>
               </SimpleGrid> 
-       </Box>
-       <Table>
+              
+              <Table bg="teal">
         <Thead>
           <Tr>
             <Th>H</Th>
@@ -62,8 +59,9 @@ const PricingPage = () => {
          </Tr>
         </Tbody>
        </Table>
-      </Box>
-    </Layout>
+      
+       </Box>
+      
    
   );
 };
