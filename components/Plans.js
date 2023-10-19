@@ -2,7 +2,7 @@
 import { Box, Button, Stack, Flex, Heading, Text, HStack, Spacer, Card, CardBody, SimpleGrid, Link, CardHeader, CardFooter, Tooltip } from '@chakra-ui/react'
 import { Progress } from '@chakra-ui/react'
 import { QuestionIcon } from '@chakra-ui/icons'
-import { MotionBox } from '@chakra-ui/react';
+//import { MotionBox } from '@chakra-ui/react';
 
 
 export const Plans = () => {
@@ -72,13 +72,16 @@ export const Plans = () => {
           </CardHeader>
           <CardBody>
             <Heading size="lg">N5,000</Heading><Text pb={8}>/month</Text>
-            <Text>3000 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
+             <Text>5000 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
             <Text>10 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>3 Shops <QuestionIcon/></Text>
+            <Text>3 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets on a single'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
             <Text>10 Staff <QuestionIcon/></Text>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
+            
+            <Text>Track Credit Sales <Tooltip hasArrow label="allow you to keep accurate record of your debts tansactions and items you sold out on credit and prevent avoidable conflicts"><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
           </CardBody>
           <CardFooter>
@@ -92,8 +95,13 @@ export const Plans = () => {
           </CardHeader>
           <CardBody>
             <Heading size="md" pb={6}>Get a Quote</Heading>
-            <Text>Unlimited Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
+            <Text>Unlimited Items <Tooltip hasArrow label='There is no limit to the number of items you can manage with this plan'><QuestionIcon/></Tooltip></Text> 
             <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
+            <Text>10 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets with a single subscription plan'><QuestionIcon/></Tooltip></Text>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
+            <Text>50 Staff <QuestionIcon/></Text>
+            <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/> 
+            
           </CardBody>
           <CardFooter>
             <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
