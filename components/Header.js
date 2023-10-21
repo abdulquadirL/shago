@@ -20,13 +20,13 @@ export function Header() {
             color="white"
             maxWidth="100%"
             fontWeight='bold' 
-            fontSize={["xl", "2xl", "70px"]} 
+            size={["sm", "xl", "3xl"]} 
             fontStyle='Inter' 
             textAlign="left"
             pt="30px"
             pl="10px"
             >
-              Manage and grow your business the smart way
+              Manage your shop the smart way
             </Heading> 
             <Text
             width="100%" 
@@ -36,8 +36,9 @@ export function Header() {
             mb="20px"
             pl="10px" 
             color="blue.50"
-            textAlign="left">
-              It is hightime you reduced avoidable losses and maximize your income without hassle.
+            textAlign="left"
+            >
+              Seamlessly track your shop activities from the one powerful software and unlock the full potential of your business 
             </Text> 
             </Stack>
             </Box>

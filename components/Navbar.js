@@ -75,13 +75,11 @@ function Navbar() {
         <Link color="white" href="#features" >Features</Link>
         <Link color="white"   href='#plans'>Pricing</Link>
         {/* <Link color="white"  href='#help'>Help</Link> */}
-      </Box>
-      
-      <Box textAlign="right">
-        <Link color="white" as={NextLink} target="_blank" href='https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4'>
+        <Link color="white" target="_blank" href='https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4'>
           Learn
         </Link>
       </Box>
+      
     </Flex>
     
   );
