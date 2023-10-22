@@ -1,8 +1,8 @@
-import { Box, Flex, Spacer, Heading, useColorMode, Link, Button, Center } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Heading, Image, useColorMode, Link, Button, Center } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import React from 'react'
 import { useEffect, useState } from "react";
-import NextLink from "next/link";
+
 
 
 function Navbar() {
@@ -52,9 +52,12 @@ function Navbar() {
     >
     <Flex align="center"
           mr={5}>
+          <Image  height={["10px", "30px", "30px"]}  objectFit='cover' src="./iconShago.png"
+          />
       <Heading as="h1" size="lg" fontFamily="inter" fontWeight="extrabold" letterSpacing={"-0.3px"} color="blue.300">
           Shago
       </Heading>
+    
     </Flex>
     <Spacer />
       <Box  display={{ base: "block", md: "none" }} onClick={handleToggle}>

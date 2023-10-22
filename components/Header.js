@@ -29,7 +29,7 @@ export function Header() {
               Manage your shop the smart way
             </Heading> 
             <Text
-            width="100%" 
+            width="80%" 
             fontWeight='medium' 
             fontSize={["12px", "14px", "2xl"]} 
             mt='15px'
