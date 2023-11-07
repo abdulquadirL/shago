@@ -7,10 +7,9 @@ const TestFeatures = () => {
         
           <SimpleGrid spacing="15px" templateColumns='repeat(auto-fill, minmax(350px, 2fr))' >
             <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="gray.800">
-              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
+             
               <Stack>
                 <CardHeader>
-                  <Image src=""/>
                   <Heading size="md"> Seamless Sales Tracking </Heading>
                   
                 </CardHeader>
@@ -25,18 +24,15 @@ const TestFeatures = () => {
               <Stack>
                 <CardHeader>
                   <Heading size="md">Inventory Control Made Easy</Heading>
-                  <Image />
                 </CardHeader>
                 <CardBody>
                   <Text>Manage your stock effortlessly. Stay in the know about stock levels, receive low stock alerts, and keep your shelves filled with the fast moving items. Ensure nothing goes out of stock.</Text>
                 </CardBody>
                 <CardFooter></CardFooter>
               </Stack>
-
             </Card>
 
              <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="gray.800">
-
              <Stack>
                 <CardHeader>
                   <Heading size="md">Valuable Insights at Your Fingertips</Heading>
@@ -58,7 +54,7 @@ const TestFeatures = () => {
                 </CardBody>
                 <CardFooter></CardFooter>
               </Stack>
-              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
+              
             </Card>
             <Card direction={{ base: 'column', sm: 'column' }} color="white" bg="gray.800">
             <Stack>
@@ -70,7 +66,7 @@ const TestFeatures = () => {
                 </CardBody>
                 <CardFooter></CardFooter>
               </Stack>
-              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
+             
             </Card>
             <Card direction={{ base: 'column', sm: 'column' }} color="white" bg="gray.800">
             <Stack>
@@ -82,12 +78,10 @@ const TestFeatures = () => {
                 </CardBody>
                 <CardFooter></CardFooter>
               </Stack>
-              {/* <Image width={[ "250px"]} height={[ "200px"]}  objectFit='cover' src="./shago.png" alt='Shago'/> */}
             </Card>
           </SimpleGrid>
           
       </Box> 
-    
   )
 }
 

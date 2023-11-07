@@ -1,6 +1,5 @@
 import { Box, Flex, Spacer, Heading, Image, useColorMode, Link, Button, Center } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import React from 'react'
 import { useEffect, useState } from "react";
 
 

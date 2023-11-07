@@ -4,15 +4,15 @@ import { Box, Heading, Text, Stack, Button, Image, Center} from '@chakra-ui/reac
 
 export function Header() {
   return (
-    <Box width="100%" bgGradient="radial(teal.400, teal.300, gray.500)"  >
+    <Box  width="100%" bgGradient="radial(teal.400, teal.300, gray.500)"  >
       <Box
-      pl="30px"
-      pt="30px" 
+        pl="30px"
+        pt="30px" 
       > 
       <Stack direction="row">
         <Box
-        width="50%"
-        as='section'
+          width="50%"
+          as='section'
           
         >
            <Stack direction="column">
@@ -53,17 +53,17 @@ export function Header() {
       </Stack>
              
         </Box>
-        <Center>
+           <Center>
               <Button 
-              bgGradient="linear(to-r, orange, green.500)"
-              _hover={{bgGradient: 'linear(to-l, orange.300, yellow.500),'}}
-              variant="solid"
-              borderRadius="20px" 
-              ml="10px"
-              mr="2px" 
-              mt='10px' 
-              mb="30px"
-              size={['sm', 'sm', 'lg']}
+                bgGradient="linear(to-r, orange, green.500)"
+                _hover={{bgGradient: 'linear(to-l, orange.300, yellow.500),'}}
+                variant="solid"
+                borderRadius="20px" 
+                ml="10px"
+                mr="2px" 
+                mt='10px' 
+                mb="30px"
+                size={['sm', 'sm', 'lg']}
               
               > 
               Get started for free

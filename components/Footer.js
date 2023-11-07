@@ -7,10 +7,11 @@ import { FaCopyright } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <Box
-     p='15px'
-     pt="40px"
-     bg="gray.800"
-     color="white">
+      p='15px'
+      pt="40px"
+      bg="gray.800"
+      color="white"
+    >
       <SimpleGrid pl="3rem"  spacing="35px" templateColumns='repeat(auto-fill, minmax(250px, 1fr))'> 
          <Card direction={{base: "column", sm: "row" }} color="white" bg="transparent">
             <CardHeader>
