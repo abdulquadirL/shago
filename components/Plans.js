@@ -52,13 +52,13 @@ export const Plans = () => {
           </CardHeader>
           <CardBody>
             <Heading size="lg">N2,500</Heading><Text pb={8}>/month</Text>
-            <Text>500 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
+            <Text>1000 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
-            <Text>4 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
+            <Text>5 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
-            <Text>1 Shop <QuestionIcon/></Text>
+            <Text>2 Shops <QuestionIcon/></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
-            <Text>3 Staff <QuestionIcon/></Text>
+            <Text>4 Staff <QuestionIcon/></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
           </CardBody>
           <CardFooter>
@@ -74,11 +74,11 @@ export const Plans = () => {
             <Heading size="lg">N5,000</Heading><Text pb={8}>/month</Text>
              <Text>5000 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>10 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
+            <Text>13 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>3 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets on a single'><QuestionIcon/></Tooltip></Text>
+            <Text>5 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets on a single'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>10 Staff <QuestionIcon/></Text>
+            <Text>12 Staff <QuestionIcon/></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
             
             <Text>Track Credit Sales <Tooltip hasArrow label="allow you to keep accurate record of your debts tansactions and items you sold out on credit and prevent avoidable conflicts"><QuestionIcon/></Tooltip></Text>
@@ -97,7 +97,7 @@ export const Plans = () => {
             <Heading size="md" pb={6}>Get a Quote</Heading>
             <Text>Unlimited Items <Tooltip hasArrow label='There is no limit to the number of items you can manage with this plan'><QuestionIcon/></Tooltip></Text> 
             <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
-            <Text>10 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets with a single subscription plan'><QuestionIcon/></Tooltip></Text>
+            <Text>20 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets with a single subscription plan'><QuestionIcon/></Tooltip></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
             <Text>50 Staff <QuestionIcon/></Text>
             <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/> 
