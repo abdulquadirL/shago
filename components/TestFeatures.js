@@ -6,7 +6,7 @@ const TestFeatures = () => {
     <Box id="features"  p="3rem" bg="teal">
         
           <SimpleGrid spacing="15px" templateColumns='repeat(auto-fill, minmax(350px, 2fr))' >
-            <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="gray.800">
+            <Card direction={{ base: 'row', sm: 'column' }} borderRadius={10} color="white" bg="gray.800">
              
               <Stack>
                 <CardHeader>
@@ -20,7 +20,7 @@ const TestFeatures = () => {
               </Stack>
             </Card>
 
-             <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="gray.800">
+             <Card direction={{ base: 'row', sm: 'column' }} borderRadius={10} color="white" bg="gray.800">
               <Stack>
                 <CardHeader>
                   <Heading size="md">Inventory Control Made Easy</Heading>
@@ -32,7 +32,7 @@ const TestFeatures = () => {
               </Stack>
             </Card>
 
-             <Card direction={{ base: 'row', sm: 'column' }} color="white" bg="gray.800">
+             <Card direction={{ base: 'row', sm: 'column' }} borderRadius={10} color="white" bg="gray.800">
              <Stack>
                 <CardHeader>
                   <Heading size="md">Valuable Insights at Your Fingertips</Heading>
@@ -44,7 +44,7 @@ const TestFeatures = () => {
               </Stack>
             </Card>
 
-            <Card direction={{ base: 'column', sm: 'column' }} color="white" bg="gray.800">
+            <Card direction={{ base: 'column', sm: 'column' }} borderRadius={10} color="white" bg="gray.800">
             <Stack>
                 <CardHeader>
                   <Heading size="md"> Invoice Generation & Sharing</Heading>
@@ -56,7 +56,7 @@ const TestFeatures = () => {
               </Stack>
               
             </Card>
-            <Card direction={{ base: 'column', sm: 'column' }} color="white" bg="gray.800">
+            <Card direction={{ base: 'column', sm: 'column' }} borderRadius={10} color="white" bg="gray.800">
             <Stack>
                 <CardHeader>
                   <Heading size="md">Stay on Top of Credit Sales</Heading>
@@ -68,7 +68,7 @@ const TestFeatures = () => {
               </Stack>
              
             </Card>
-            <Card direction={{ base: 'column', sm: 'column' }} color="white" bg="gray.800">
+            <Card direction={{ base: 'column', sm: 'column' }} borderRadius={10} color="white" bg="gray.800">
             <Stack>
                 <CardHeader>
                   <Heading size="md">Real-Time Sales Reports</Heading>

@@ -1,10 +1,10 @@
 
 import React from 'react'
-import { Box, Heading, Text, Stack, Button, Image, Center} from '@chakra-ui/react'
+import { Box, Heading, Text, Stack, Button, Image, Center} from '@chakra-ui/react' //radial(teal.400, teal.300, gray.500)
 
 export function Header() {
   return (
-    <Box  width="100%" bgGradient="radial(teal.400, teal.300, gray.500)"  >
+    <Box  width="100%" bg="black"  > 
       <Box
         pl="30px"
         pt="30px" 
@@ -17,7 +17,7 @@ export function Header() {
         >
            <Stack direction="column">
             <Heading 
-            color="white"
+            color="blue.300"
             maxWidth="100%"
             fontWeight='bold' 
             size={["sm", "xl", "3xl"]} 
@@ -35,7 +35,7 @@ export function Header() {
             mt='15px'
             mb="20px"
             pl="10px" 
-            color="blue.50"
+            color="white"
             textAlign="left"
             >
               Seamlessly track your shop activities from the one powerful software and unlock the full potential of your business 
