@@ -1,11 +1,6 @@
 
 import { ChakraProvider, CSSReset} from "@chakra-ui/react"; 
 
-
-
-
-
-
  function App({ Component, pageProps  }) {
   return (
     <ChakraProvider >

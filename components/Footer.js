@@ -1,79 +1,121 @@
-import React from 'react'
-import { Box, Flex, Spacer, HStack, Link, Text, Container, Center, SimpleGrid, Card, CardHeader, CardBody, CardFooter, Stack } from '@chakra-ui/react'
-import { IconButton } from "@chakra-ui/react";
-import {FaTwitter, FaFacebook, FaInstagram} from "react-icons/fa"
-import { FaCopyright } from 'react-icons/fa';
+import React from 'react';
+import {
+  Box,
+  SimpleGrid,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  IconButton,
+  Text,
+  HStack,
+  Center,
+  Stack,
+  Link,
+} from '@chakra-ui/react';
+import { FaTwitter, FaFacebook, FaInstagram, FaCopyright } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
     <Box
-      p='15px'
-      pt="40px"
+      p={{ base: 4, md: 8 }}
+      pt={{ base: 8, md: 12 }}
       bg="gray.800"
       color="white"
+      as="footer"
+      w="100%"
     >
-      <SimpleGrid pl="3rem"  spacing="35px" templateColumns='repeat(auto-fill, minmax(250px, 1fr))'> 
-         <Card direction={{base: "column", sm: "row" }} color="white" bg="transparent">
-            <CardHeader>
-               {/* <Text>About</Text>
-               <Link color="white"   href="/earn">Make money</Link > */}
-            </CardHeader>
-            <CardBody>
-               <Text></Text>
-            </CardBody>
-         </Card>
-         <Card bg="transparent" color="white">
-            <CardHeader>
-               {/* <Text>About</Text>
-               <Link color="white"   href="/help">Help center</Link > */}
-            </CardHeader>
-            <CardBody>
-               <Text></Text>
-            </CardBody>
-         </Card>
-         <Card bg="transparent" color="white">
-            <CardHeader>
-               {/* <Text>About</Text> */}
-            </CardHeader>
-            <CardBody>
-               <Text></Text>
-            </CardBody>
-         </Card>
-         
+      <SimpleGrid
+        spacing={6}
+        columns={{ base: 1, sm: 2, md: 3 }}
+        px={{ base: 0, md: 8 }}
+        mb={8}
+      >
+        <Card bg="transparent" color="white" boxShadow="none">
+          <CardHeader>
+            <Text fontWeight="bold" fontSize="lg">About</Text>
+          </CardHeader>
+          <CardBody>
+            <Text fontSize="sm">
+              Shago is your trusted platform for easy, secure, and fast transactions.
+            </Text>
+          </CardBody>
+        </Card>
+        <Card bg="transparent" color="white" boxShadow="none">
+          <CardHeader>
+            <Text fontWeight="bold" fontSize="lg">Quick Links</Text>
+          </CardHeader>
+          <CardBody>
+            <Stack spacing={2}>
+              <Link color="white" href="/earn">Make Money</Link>
+              <Link color="white" href="/help">Help Center</Link>
+              <Link color="white" href="/about">About Us</Link>
+            </Stack>
+          </CardBody>
+        </Card>
+        <Card bg="transparent" color="white" boxShadow="none">
+          <CardHeader>
+            <Text fontWeight="bold" fontSize="lg">Contact</Text>
+          </CardHeader>
+          <CardBody>
+            <Text fontSize="sm">Email: support@shago.com</Text>
+            <Text fontSize="sm">Phone: +234 814 033 3474</Text>
+          </CardBody>
+        </Card>
       </SimpleGrid>
-      <Box pl="3rem" align="right">
-         <Card width="300px" mt="4rem" mb="1rem" bg="transparent">
-            <CardBody>
-               <Text pl="2.2rem" color="white" textAlign="left">Follow us on</Text>
-            </CardBody>
-            <CardFooter justifyContent="space-evenly">
-            <IconButton
-               as="a"
-               href="https://twitter.com/yourtwitter"
-               icon={<FaTwitter />}
-               aria-label="Twitter"
-            />
-            <IconButton
-               as="a"
-               href="https://facebook.com/yourfacebook"
-               icon={<FaFacebook />}
-               aria-label="Facebook"
-            />
-            <IconButton
-               as="a"
-               href="https://instagram.com/yourinstagram"
-               icon={<FaInstagram />}
-               aria-label="Instagram"
-            /> 
-            </CardFooter>
-         </Card>
+      <Box w="100%" mb={6}>
+        <Card
+          width={{ base: "100%", sm: "320px" }}
+          mx="auto"
+          bg="transparent"
+          boxShadow="none"
+        >
+          <CardBody>
+            <Text color="white" textAlign="center" mb={2}>
+              Follow us on
+            </Text>
+          </CardBody>
+          <CardFooter justifyContent="center">
+            <HStack spacing={4}>
+              <IconButton
+                as="a"
+                href="https://twitter.com/yourtwitter"
+                icon={<FaTwitter />}
+                aria-label="Twitter"
+                variant="ghost"
+                colorScheme="whiteAlpha"
+                fontSize="xl"
+              />
+              <IconButton
+                as="a"
+                href="https://facebook.com/yourfacebook"
+                icon={<FaFacebook />}
+                aria-label="Facebook"
+                variant="ghost"
+                colorScheme="whiteAlpha"
+                fontSize="xl"
+              />
+              <IconButton
+                as="a"
+                href="https://instagram.com/yourinstagram"
+                icon={<FaInstagram />}
+                aria-label="Instagram"
+                variant="ghost"
+                colorScheme="whiteAlpha"
+                fontSize="xl"
+              />
+            </HStack>
+          </CardFooter>
+        </Card>
       </Box>
       <Center>
-      <HStack>
-         <FaCopyright/>
-         <Text  fontFamily="roboto"> 2023 Shago Inc. All rights reserved</Text>
-      </HStack>
+        <HStack spacing={2}>
+          <FaCopyright />
+          <Text fontFamily="roboto" fontSize="sm">
+            {new Date().getFullYear()} Shago Inc. All rights reserved
+          </Text>
+        </HStack>
       </Center>
-   </Box>
-  )
-}
+    </Box>
+  );
+};

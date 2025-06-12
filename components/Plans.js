@@ -1,115 +1,194 @@
-
-import { Box, Button, Stack, Flex, Heading, Text, HStack, Spacer, Card, CardBody, SimpleGrid, Link, CardHeader, CardFooter, Tooltip } from '@chakra-ui/react'
-import { Progress } from '@chakra-ui/react'
-import { QuestionIcon } from '@chakra-ui/icons'
-//import { MotionBox } from '@chakra-ui/react';
-
+import {
+  Box,
+  Button,
+  Heading,
+  Text,
+  Card,
+  CardBody,
+  SimpleGrid,
+  Link,
+  CardHeader,
+  CardFooter,
+  Tooltip,
+  Progress,
+  Stack,
+} from '@chakra-ui/react';
+import { QuestionIcon } from '@chakra-ui/icons';
 
 export const Plans = () => {
   return (
     <Box
-     id="plans"
-     bg="teal.500"
-     width="100%"
-     height=''  
-     px="25px"  
-     py="25px" 
+      id="plans"
+      bg="teal.500"
+      width="100%"
+      px={{ base: 2, md: 8 }}
+      py={{ base: 6, md: 10 }}
     >
       <Text
-       fontSize='20px' 
-       width="100%" 
-       color='white' 
-       fontWeight='bold'
-       mb="10px"
-      > Pricing
+        fontSize={{ base: 'lg', md: '2xl' }}
+        width="100%"
+        color="white"
+        fontWeight="bold"
+        mb={{ base: 4, md: 8 }}
+        textAlign="center"
+      >
+        Pricing
       </Text>
 
-       <SimpleGrid minChildWidth='250px' spacing="35px" templateColumns='repeat(auto-fill, minmax(250px, 1fr))'>
-        <Card align="center" size="lg">
-          <CardHeader pb="4rem">
-            <Heading size="md">Free</Heading>
-            <Text>Best for Mini Shops</Text>
-          </CardHeader>
-          <CardBody >
-            <Heading size="lg">N0</Heading><Text pb={8}>/month</Text>
-            <Text>100 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
-            <Text>2 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
-            <Text>1 Shop <QuestionIcon/></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
-            <Text>1 Staff <QuestionIcon/></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={30}/>
-          </CardBody>
-          <CardFooter>
-            <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
-          </CardFooter>
-        </Card>
-        <Card align="center" size="lg">
-          <CardHeader pb="4rem">
+      <SimpleGrid
+        minChildWidth="250px"
+        spacing={{ base: 4, md: 8 }}
+        columns={{ base: 1, sm: 2, md: 4 }}
+      >
+
+        {/* Basic Plan */}
+        <Card align="center" size="lg" bg="white" color="teal.700" borderRadius="lg" boxShadow="md">
+          <CardHeader pb="2rem">
             <Heading size="md">Basic</Heading>
-            <Text>Best for Small Businesses</Text>
+            <Text fontSize="sm">Best for Small Businesses</Text>
           </CardHeader>
           <CardBody>
-            <Heading size="lg">N2,500</Heading><Text pb={8}>/month</Text>
-            <Text>1000 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
-            <Text>5 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
-            <Text>2 Shops <QuestionIcon/></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
-            <Text>4 Staff <QuestionIcon/></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={50}/>
+            <Heading size="lg" color="teal.600">N2,500</Heading>
+            <Text pb={4} fontSize="sm">/month</Text>
+            <Stack spacing={2}>
+              <Text>
+                1000 Items{' '}
+                <Tooltip hasArrow label="Allows you to register items and track the details of sales">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={50} />
+              <Text>
+                5 User License{' '}
+                <Tooltip hasArrow label="User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={50} />
+              <Text>
+                2 Shops <QuestionIcon />
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={50} />
+              <Text>
+                4 Staff <QuestionIcon />
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={50} />
+            </Stack>
           </CardBody>
           <CardFooter>
-            <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
+            <Button
+              as={Link}
+              href="https://play.google.com/store/apps/details?id=ng.pencode.ims"
+              colorScheme="teal"
+              width="100%"
+              borderRadius="full"
+            >
+              Get Started
+            </Button>
           </CardFooter>
         </Card>
-        <Card align="center">
-          <CardHeader pb="4rem">
+
+        {/* Ultimate Plan */}
+        <Card align="center" size="lg" bg="white" color="teal.700" borderRadius="lg" boxShadow="md">
+          <CardHeader pb="2rem">
             <Heading size="md">Ultimate</Heading>
-            <Text>Right Choice for Supermarkets and Restaurants</Text>
+            <Text fontSize="sm">Right Choice for Supermarkets and Restaurants</Text>
           </CardHeader>
           <CardBody>
-            <Heading size="lg">N5,000</Heading><Text pb={8}>/month</Text>
-             <Text>5000 Items <Tooltip hasArrow label='allow you to register items and track the details of sales'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>13 User License <Tooltip hasArrow label='User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>5 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets on a single'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            <Text>12 Staff <QuestionIcon/></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
-            
-            <Text>Track Credit Sales <Tooltip hasArrow label="allow you to keep accurate record of your debts tansactions and items you sold out on credit and prevent avoidable conflicts"><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={70}/>
+            <Heading size="lg" color="teal.600">N5,000</Heading>
+            <Text pb={4} fontSize="sm">/month</Text>
+            <Stack spacing={2}>
+              <Text>
+                5000 Items{' '}
+                <Tooltip hasArrow label="Allows you to register items and track the details of sales">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={70} />
+              <Text>
+                13 User License{' '}
+                <Tooltip hasArrow label="User Licenses allow you to manage inventory and track activities in your shop by bringing your staff or team into Shago">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={70} />
+              <Text>
+                5 Shops{' '}
+                <Tooltip hasArrow label="Shago allows you to manage other branches/outlets on a single">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={70} />
+              <Text>
+                12 Staff <QuestionIcon />
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={70} />
+              <Text>
+                Track Credit Sales{' '}
+                <Tooltip hasArrow label="Allows you to keep accurate record of your debts transactions and items you sold out on credit and prevent avoidable conflicts">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={70} />
+            </Stack>
           </CardBody>
           <CardFooter>
-            <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
+            <Button
+              as={Link}
+              href="https://play.google.com/store/apps/details?id=ng.pencode.ims"
+              colorScheme="teal"
+              width="100%"
+              borderRadius="full"
+            >
+              Get Started
+            </Button>
           </CardFooter>
         </Card>
-        <Card align="center">
-          <CardHeader pb="4rem">
+
+        {/* Premium Plan */}
+        <Card align="center" size="lg" bg="white" color="teal.700" borderRadius="lg" boxShadow="md">
+          <CardHeader pb="2rem">
             <Heading size="md">Premium</Heading>
-            <Text>Best for Larger Businesses with multiple branches </Text>
+            <Text fontSize="sm">Best for Larger Businesses with multiple branches</Text>
           </CardHeader>
           <CardBody>
-            <Heading size="md" pb={6}>Get a Quote</Heading>
-            <Text>Unlimited Items <Tooltip hasArrow label='There is no limit to the number of items you can manage with this plan'><QuestionIcon/></Tooltip></Text> 
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
-            <Text>20 Shops <Tooltip hasArrow label='Shago allows you to manage other branches/outlets with a single subscription plan'><QuestionIcon/></Tooltip></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/>
-            <Text>50 Staff <QuestionIcon/></Text>
-            <Progress borderRadius={10} colorScheme='green' size='sm' value={100}/> 
-            
+            <Heading size="md" color="teal.600" pb={6}>
+              Get a Quote
+            </Heading>
+            <Stack spacing={2}>
+              <Text>
+                Unlimited Items{' '}
+                <Tooltip hasArrow label="There is no limit to the number of items you can manage with this plan">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={100} />
+              <Text>
+                20 Shops{' '}
+                <Tooltip hasArrow label="Shago allows you to manage other branches/outlets with a single subscription plan">
+                  <QuestionIcon />
+                </Tooltip>
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={100} />
+              <Text>
+                50 Staff <QuestionIcon />
+              </Text>
+              <Progress borderRadius={10} colorScheme="green" size="sm" value={100} />
+            </Stack>
           </CardBody>
           <CardFooter>
-            <Button><Link href="https://play.google.com/store/apps/details?id=ng.pencode.ims">Get Started</Link></Button>
+            <Button
+              as={Link}
+              href="https://play.google.com/store/apps/details?id=ng.pencode.ims"
+              colorScheme="teal"
+              width="100%"
+              borderRadius="full"
+            >
+              Get Started
+            </Button>
           </CardFooter>
         </Card>
-  
-       </SimpleGrid>
-       
+      </SimpleGrid>
     </Box>
-  )
-}
+  );
+};
