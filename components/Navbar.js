@@ -98,16 +98,7 @@ function Navbar() {
         <Link color="white" href="#plans" mx={2} display="block" py={2}>
           Pricing
         </Link>
-        <Link
-          color="white"
-          target="_blank"
-          href="https://satisfying-drifter-fa6.notion.site/Shago-User-s-guide-4442ba7c507c4b99a0fb44f224604a8e?pvs=4"
-          mx={2}
-          display="block"
-          py={2}
-        >
-          Learn
-        </Link>
+        
         {/* Theme toggle button */}
         <IconButton
           aria-label="Toggle color mode"
