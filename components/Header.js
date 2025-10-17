@@ -3,8 +3,8 @@ import { Box, Heading, Text, Stack, Button, Image, Center } from '@chakra-ui/rea
 
 export function Header() {
   return (
-    <Box width="100%" bg="gray.300" color="black" minH="100vh" position="relative">
-      <Box px={{ base: 2, md: 8 }} pt={{ base: 6, md: 10 }}>
+    <Box width="100%" bgImage="url('/shago.png')" color="black" minH="100vh" position="relative">
+      <Box maxW="85vw" mx="auto" px={{ base: 2, md: 8 }} pt={{ base: 6, md: 10 }}>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 8, md: 4 }}

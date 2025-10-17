@@ -19,7 +19,6 @@ export const Plans = () => {
   return (
     <Box
       id="plans"
-      bg="teal.500"
       width="100%"
       px={{ base: 2, md: 8 }}
       py={{ base: 6, md: 10 }}
@@ -27,7 +26,7 @@ export const Plans = () => {
       <Text
         fontSize={{ base: 'lg', md: '2xl' }}
         width="100%"
-        color="white"
+        color="gray.800"
         fontWeight="bold"
         mb={{ base: 4, md: 8 }}
         textAlign="center"
@@ -42,13 +41,13 @@ export const Plans = () => {
       >
 
         {/* Basic Plan */}
-        <Card align="center" size="lg" bg="white" color="teal.700" borderRadius="lg" boxShadow="md">
+        <Card align="center" size="lg" bg="white" color="gray.800" borderRadius="lg" boxShadow="md">
           <CardHeader pb="2rem">
             <Heading size="md">Basic</Heading>
             <Text fontSize="sm">Best for Small Businesses</Text>
           </CardHeader>
           <CardBody>
-            <Heading size="lg" color="teal.600">N2,500</Heading>
+            <Heading size="lg" >N2,500</Heading>
             <Text pb={4} fontSize="sm">/month</Text>
             <Stack spacing={2}>
               <Text>
@@ -89,13 +88,13 @@ export const Plans = () => {
         </Card>
 
         {/* Ultimate Plan */}
-        <Card align="center" size="lg" bg="white" color="teal.700" borderRadius="lg" boxShadow="md">
+        <Card align="center" size="lg" bg="white" borderRadius="lg" boxShadow="md">
           <CardHeader pb="2rem">
             <Heading size="md">Ultimate</Heading>
             <Text fontSize="sm">Right Choice for Supermarkets and Restaurants</Text>
           </CardHeader>
           <CardBody>
-            <Heading size="lg" color="teal.600">N5,000</Heading>
+            <Heading size="lg" >N5,000</Heading>
             <Text pb={4} fontSize="sm">/month</Text>
             <Stack spacing={2}>
               <Text>
@@ -146,7 +145,7 @@ export const Plans = () => {
         </Card>
 
         {/* Premium Plan */}
-        <Card align="center" size="lg" bg="white" color="teal.700" borderRadius="lg" boxShadow="md">
+        <Card align="center" size="lg" bg="white" color="gray.800" borderRadius="lg" boxShadow="md">
           <CardHeader pb="2rem">
             <Heading size="md">Premium</Heading>
             <Text fontSize="sm">Best for Larger Businesses with multiple branches</Text>

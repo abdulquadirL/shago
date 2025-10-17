@@ -46,11 +46,11 @@ const features = [
 
 const TestFeatures = () => {
   return (
-    <Box id="features" px={{ base: 2, md: 8 }} py={{ base: 8, md: 16 }} bg="teal" width="100%">
+    <Box id="features" px={{ base: 2, md: 8 }} py={{ base: 8, md: 16 }} bg="transparent" width="100%">
       <Heading
         as="h2"
         size="lg"
-        color="gold.500"
+        color="gray.800"
         fontFamily="Inter"
         mb={{ base: 6, md: 10 }}
         textAlign="center"
@@ -68,11 +68,11 @@ const TestFeatures = () => {
             key={idx}
             direction="column"
             borderRadius={10}
-            color="white"
-            bg="gray.800"
+            color="gray.800"
+            bg="gray.200"
             boxShadow="md"
             minH="220px"
-            _hover={{ bg: "teal.700", transform: "translateY(-4px)", transition: "0.2s" }}
+            _hover={{ bg: "teal.700", color: "teal.100", transform: "translateY(-4px)", transition: "0.2s" }}
           >
             <Stack height="100%">
               <CardHeader>

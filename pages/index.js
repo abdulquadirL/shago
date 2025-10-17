@@ -11,15 +11,17 @@ import Navbar from "@/components/Navbar"
 export default function Home() {
 
   return (
-    <Box>
+    <Box bgGradient="linear(to-r, #f0f4f8, #e0e7ee)" minH="100vh">
+      {/* Navbar component */}
       <Navbar/>
-      <Box>
-        <Header />
+      <Header />
+      <Box maxW="85vw" mx="auto" px={4} py={8}>
         <TestFeatures />
         <Plans />
         <HelpPage />
-        <Footer/>
+        
       </Box>
+      <Footer/>
     </Box>
     
     

@@ -35,6 +35,7 @@ function Navbar() {
       boxShadow={isScrolled ? "md" : "none"}
       transition="background 0.2s"
     >
+      <Box display="flex"  width="85vw" mx="auto" alignItems="center">
       {/* Logo and Brand */}
       <Flex align="center" mr={5}>
         <Image
@@ -109,6 +110,7 @@ function Navbar() {
           ml={{ base: 0, md: 4 }}
           mt={{ base: 2, md: 0 }}
         />
+      </Box>
       </Box>
     </Flex>
   );
